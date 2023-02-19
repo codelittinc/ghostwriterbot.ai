@@ -7,3 +7,6 @@ menuTrigger.onclick = function() {
     menuTrigger.classList.toggle('is-active')
     body.classList.toggle('lock-scroll')
 }
+
+const currentYear = new Date().getFullYear();
+document.getElementById("currentYear").textContent = currentYear;
