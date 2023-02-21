@@ -1,0 +1,33 @@
+---
+title: Support
+layout: default
+bodyClass: "page-support"
+---
+
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12">
+      <div class="service service-single">
+        <h1 class="title">{{page.title}}</h1>
+        {% include call.html show_button=false %}
+        <div class="content mt-4">
+          {{content}} {% for item in site.data.faq %}
+          <div class="faq-item-container">
+            <div class="faq-item-content" onclick="changeVisibility(this)">
+              <h1 class="faq-item-title">
+                {{item.title}}
+                <img
+                  src="/images/chevron-down.svg"
+                  alt="seta para baixo"
+                  class="arrow"
+                />
+              </h1>
+              <p class="faq-item-description hide">{{item.description}}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

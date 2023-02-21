@@ -1,6 +1,9 @@
 main:
   - name: "Privacy"
     url: "/privacy/"
+    weight: 1
+  - name: "FAQ"
+    url: "/faq/"
     weight: 2
   - name: "Support"
     url: "/support/"
@@ -13,6 +16,9 @@ footer:
   - name: "Privacy"
     url: "/privacy/"
     weight: 2
+  - name: "FAQ"
+    url: "/faq/"
+    weight: 3
   - name: "Support"
     url: "/support/"
-    weight: 3
+    weight: 4
