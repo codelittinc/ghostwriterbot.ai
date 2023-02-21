@@ -11,14 +11,6 @@ bodyClass: "page-support"
         <h1 class="title">{{page.title}}</h1>
         {% include call.html show_button=false %}
         <div class="content mt-4">
-          {{content}} {% for item in site.data.faq %}
-          <div class="faq-item-container">
-            <div class="faq-item-content" onclick="changeVisibility(this)">
-              <h1 class="faq-item-title">{{item.title}} <img src="/images/chevron-down.svg" alt="seta para baixo" class="arrow"> </h1>
-              <p class="faq-item-description hide">{{item.description}}</p>
-            </div>
-          </div>
-          {% endfor %}
           <form class="support-form">
             <div class="form-container">
               <h2 class="form-title">Contact Us</h2>

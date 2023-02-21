@@ -1,14 +1,14 @@
 baseurl: '/'
 permalink: pretty
-title: 'Road Runner'
+title: 'RoadRunner'
 
 logo:
-  mobile: "images/logo/logo-mobile.svg"
+  mobile: "images/logo/logo-mobile.png"
   mobile_height: "32px"
   mobile_width: "32px"
-  desktop: "images/logo/logo.svg"
-  desktop_height: "32px"
-  desktop_width: "120px"
+  desktop: "images/logo/logo.png"
+  desktop_height: "40px"
+  desktop_width: "50px"
 
 home: 
   limit_services: 6
