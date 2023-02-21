@@ -14,7 +14,14 @@ bodyClass: "page-support"
           {{content}} {% for item in site.data.faq %}
           <div class="faq-item-container">
             <div class="faq-item-content" onclick="changeVisibility(this)">
-              <h1 class="faq-item-title">{{item.title}} <img src="/images/chevron-down.svg" alt="seta para baixo" class="arrow"> </h1>
+              <h1 class="faq-item-title">
+                {{item.title}}
+                <img
+                  src="/images/chevron-down.svg"
+                  alt="seta para baixo"
+                  class="arrow"
+                />
+              </h1>
               <p class="faq-item-description hide">{{item.description}}</p>
             </div>
           </div>
