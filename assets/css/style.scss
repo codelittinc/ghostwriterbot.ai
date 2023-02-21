@@ -2,13 +2,14 @@
 ---
 
 // Colors
-$primary: #e5261f;
+$primary: #431F92;
 $primary-dark: #a01b16;
 $secondary: #f88379;
 $black: #2f2f41;
 $white: #ffffff;
 $white-offset: #fff6f8;
 $steel: #5c5a5a;
+$principal: #3bc6fb;
 
 // Links
 $link-color: $primary;
@@ -17,8 +18,8 @@ $link-hover-color: lighten($primary, 10%);
 $link-hover-decoration: underline;
 
 // Fonts
-$font-family-base: Helvetica, Arial, sans-serif, -apple-system;
-$font-family-heading: "Playfair Display", serif, -apple-system;
+$font-family-base: 'Open Sans', sans-serif;
+$font-family-heading: 'Open Sans', sans-serif;
 
 // Footer
 $footer-background-color: $primary;
@@ -58,8 +59,8 @@ $sub-footer-text-color: $white;
 
 // Pages
 @import "pages/page-home";
-@import "pages/page-teams";
-@import "pages/page-service";
+@import "pages/page-support";
+// @import "pages/page-service";
 
 body {
   font-size: 16px;
