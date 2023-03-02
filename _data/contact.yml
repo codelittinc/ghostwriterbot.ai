@@ -1,1 +1,1 @@
-contact_button_link: '/'
+contact_button_link: 'https://slack.com/oauth/v2/authorize?client_id=2330326596.913768310308&scope=app_mentions:read,channels:join,chat:write,commands,im:read,reactions:read,reactions:write,users:read,channels:history&user_scope=reactions:read'
