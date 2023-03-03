@@ -11,7 +11,7 @@ bodyClass: "page-support"
         <h1 class="title">{{page.title}}</h1>
         {% include call.html show_button=false %}
         <div class="content mt-4">
-          <form class="support-form">
+          <form class="support-form" id="support-form" onsubmit="SendForm(event)">
             <div class="form-container">
               <h2 class="form-title">Contact Us</h2>
               <div class="form-column">
@@ -52,6 +52,7 @@ bodyClass: "page-support"
                     id="company"
                     name="company"
                     placeholder="Company name"
+                    required
                   />
                 </div>
                 <div class="input input-problem">
