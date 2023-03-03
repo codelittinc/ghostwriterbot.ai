@@ -23,26 +23,6 @@ function changeVisibility(eachItem) {
   }
 }
 
-function displayModal(title, message) {
-  const modal = document.querySelector('.modal');
-  const modalTitle  = document.querySelector('.modal-title');
-  const modalMessage  = document.querySelector('.modal-body');
-
-  modalTitle.innerText = title;
-  modalMessage.innerText = message;
-
-  modal.classList.remove('show');
-
-  // setTimeout(function() {
-  //   modal.style.display = 'none';
-  // }, 200);
-}
-
-function hideModal() {
-  const modal = document.querySelector('.modal');
-  modal.classList.remove('show');
-}
-
 function SendForm(event) {
   event.preventDefault();
 
@@ -69,10 +49,9 @@ function SendForm(event) {
     .then(function (response) {
       console.log("Resposta:", response.data);
       form.reset();
-      displayModal('Success', 'Your form has been submitted successfully.');
     })
     .catch(function (error) {
       console.error("Erro:", error);
-      displayModal('Error', 'There was an error submitting your form. Please try again later.');
+      form.reset();
     });
 }
